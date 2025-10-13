@@ -38,3 +38,10 @@ jobs:
       
       - name: Build
         run: cmake --build .
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: doom64ex-plus-linux64
+          path: |
+            DOOM64
+            DOOMLIC
